@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+  background-color: #332323;
+}
+
+body {
+  background: url(/images/cover.png);
+}
+
+nav {
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  width: 20%;
+  list-style-type: none;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.dropdown li {
+  width: 100%;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.7rem;
+}
+
+nav ul li a:hover {
+  background: tomato;
+  color: rgb(11, 85, 196);
+}
+
+.dropdown {
+  display: none;
+}
+
+nav ul li:hover > ul {
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul li:hover {
+  background-color: #332323;
+}

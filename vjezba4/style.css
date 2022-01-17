@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  color: #fff;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
+    url(pozadina.jpg);
+  height: 100vh;
+  background-size: cover;
+  font-family: "Saira", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 1rem;
+}
+
+.logo {
+  width: 150px;
+}
+
+nav {
+  display: inline-flex;
+  align-items: baseline;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0 0.7rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+nav a:hover {
+  color: #ad5750;
+}
+
+.navigacija li {
+  display: inline-flex;
+}
+
+.search {
+  display: inline-flex;
+  border-bottom: 1px solid #ad5750;
+}
+
+.search_input {
+  background: transparent;
+  border: none;
+}
+
+.search a {
+  padding: 0;
+}
+
+.search_input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  padding-left: 0.5rem;
+}
+
+.btn {
+  background: #ad5750;
+  font-size: 1rem;
+  padding: 0.4rem;
+  border: none;
+  cursor: pointer;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+input:focus {
+  color: #fff;
+}
+
+main {
+  display: flex;
+  margin: 2rem;
+}
+h1 {
+  font-size: 3rem;
+  font-family: "Pushster";
+}
+
+h1 span {
+  color: #ad5750;
+}
+
+h2,
+.crvena {
+  color: #ad5750;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+aside {
+  display: flex;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  padding: 30px;
+  border-radius: 25px;
+}
+
+.form h2 {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.form input {
+  background: transparent;
+  height: 2rem;
+  width: 15rem;
+  border-bottom: 1px solid #ad5750;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: 1rem;
+  margin-top: 3rem;
+  letter-spacing: 1px;
+}
+
+.btn_login {
+  background: #ad5750;
+  font-size: 1.25rem;
+  padding: 0.2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  margin: 1rem 30% 0;
+  transition: all 0.5s ease;
+}
+
+.btn_login:hover {
+  background: #3b110e;
+}
+
+.btn_login a {
+  text-decoration: none;
+}
+
+.btn_login1 {
+  margin: 1rem 0.5rem;
+  width: 15%;
+  padding: 1rem;
+}
+
+.align_center {
+  margin-top: 1rem;
+  text-decoration: none;
+}

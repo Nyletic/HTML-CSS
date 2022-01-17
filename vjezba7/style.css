@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s linear;
+}
+
+body {
+  background: url(/images/pozadina.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+nav {
+  font-family: "Roboto", sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  width: 20%;
+}
+
+.dropdown {
+  display: none;
+}
+
+nav ul li:hover > ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown li {
+  width: 100%;
+}
+nav a {
+  text-transform: uppercase;
+  display: block;
+  background: #262626;
+  padding: 1rem;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav a:hover {
+  background: #e84393;
+}
+
+.dropdown li > a {
+  background: #000;
+}
+
+.dropdown li > a:hover {
+  background: #e84393;
+}
+
+@media (max-width: 600px) {
+  nav ul li {
+    width: 100%;
+  }
+}

@@ -1,0 +1,23 @@
+.main {
+  background: $light;
+  &__container {
+    @extend %align-center;
+    justify-items: center;
+    margin: 0 auto;
+    height: 90vh;
+    width: 100%;
+    max-width: 1200px;
+    padding-right: 24px;
+    padding-left: 24px;
+
+    @include tablet {
+      flex-direction: column;
+      height: 100%;
+    }
+
+    &--left {
+      width: 100%;
+      line-height: 1.2;
+    }
+  }
+}

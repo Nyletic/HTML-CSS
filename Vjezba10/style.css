@@ -1,0 +1,169 @@
+:root {
+  --crna: #202e3b;
+  --blue: #2b7db8;
+  --text-shadow: 0.1rem 0.1rem 0.3rem #333;
+  --box-shadow: 0.1rem 0.1rem 0.3rem #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s linear;
+}
+/* kako bi lakše računali REM veličinu, postavimo font-size:62.5%, na taj način je 1REM = 10px*/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--crna);
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  background-color: rgba(40, 51, 82, 0.8);
+  padding: 2rem 2.5rem;
+  z-index: 1;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: var(--text-shadow);
+  cursor: pointer;
+}
+
+nav ul li a:hover {
+  color: var(--blue);
+}
+
+.fa-bars {
+  color: #fff;
+  font-size: 2.8rem;
+  cursor: pointer;
+  display: none;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+section {
+  text-align: center;
+  text-shadow: var(--text-shadow);
+}
+
+h1 {
+  font-size: 9rem;
+  color: var(--blue);
+}
+
+h2 {
+  font-size: 7rem;
+  color: #fff;
+}
+
+.btn {
+  outline: 0;
+  border: 0;
+  background-color: var(--blue);
+  color: #fff;
+  font-size: 1.6rem;
+  width: 20rem;
+  height: 4rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  margin-top: 0.5rem;
+}
+
+.btn:hover {
+  background: var(--crna);
+  letter-spacing: 0.1rem;
+}
+
+.icons {
+  margin: 2rem;
+}
+
+.icons a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  background: #fff;
+  color: var(--blue);
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  border-radius: 50%;
+  text-shadow: none;
+  box-shadow: var(--box-shadow);
+  margin: 0 0.5rem;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+video {
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+  .fa-bars {
+    display: block;
+    z-index: 2;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: -101%;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  nav ul {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: var(--crna);
+    width: 50%;
+  }
+
+  nav a {
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+
+  .nav-toggle {
+    left: 0;
+  }
+}
